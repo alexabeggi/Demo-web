@@ -1,10 +1,5 @@
-
-
-/*@font-face {
-    font-family: 'Glegoo';
-    src: url(../fonts/Glegoo-Regular.ttf) format('truetype');
-  }
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body {
     background-color: #FFF;
@@ -16,6 +11,7 @@ body {
 header{
     position: fixed;
     width: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 main {
