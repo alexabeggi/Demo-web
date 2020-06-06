@@ -1,0 +1,112 @@
+
+
+/*@font-face {
+    font-family: 'Glegoo';
+    src: url(../fonts/Glegoo-Regular.ttf) format('truetype');
+  }
+*/
+
+body {
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Raleway','Yantramanav', sans-serif;*/
+}
+
+/*----------------------------BODY----------------------------*/
+header{
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding: 40px;
+    padding-top: 200px;
+    height: 400px;    
+    overflow: scroll;
+}
+
+footer {
+    opacity: 0.9;
+    height: 30px;
+    width: 80%;
+    background-color: #9DD1F1;
+    border-radius: 10px;
+    /*text-align: center;*/
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+
+}
+
+/*----------------------------GENERAL STYLES----------------------------*/
+h1 {
+    color: #9DD1F1;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    color: #9DD1F1;
+    text-align: center;
+    font-size: 16px;
+}
+
+p {
+    color: DarkGrey;
+    font-size: 12px;
+    margin: 0px auto 40px auto;
+    padding: 10px 10px;
+    width: 800px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+/*----------------------------HEADER----------------------------*/
+header h1 {
+    /* border: 2px solid #9DD1F1;*/
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+nav {
+    color: #FFF;
+    background-color: #9DD1F1;
+    opacity: 0.9;
+    text-align: center;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*----------------------------MAIN----------------------------*/
+
+#bar p {
+    border-top: 1px solid #9DD1F1;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+/*----------------------------FOOTER----------------------------*/
+footer p {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    line-height: normal;
+}
