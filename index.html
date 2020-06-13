@@ -3,6 +3,9 @@
     <head>
         <title>MindYoga</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </head>
 
     <body>
@@ -24,7 +27,7 @@
     
         <main>
             <div id="home"> 
-                <figure>
+                <figure id="home-fig">
                     <img src="https://ep01.epimg.net/elpais/imagenes/2019/10/20/buenavida/1571569203_304000_1571569390_noticia_normal_recorte1.jpg" alt="Girl practicing yoga"/>
                     <figcaption>Yoga teacher in our retreat in Bali.</figcaption>
                 </figure> 
@@ -86,21 +89,25 @@
                 <h2>Retreats</h2>
                 <div id="retreats-bar"> <p> </p></div>
 
-                <ul class="row">
-                    <li class="column">Ubud, Bali</li>
-                    <li class="column">Seririt, Bali</li>
-                    <li class="column">Seminyak, Baliaos</li>
-                    <li class="column">Beruwala, Sri Lanka</li>
-                </ul>
-                <ul class="row">
-                    <li class="column">Koh Samui, Thailand</li>
-                    <li class="column">Koh Phangan, Thailand</li>
-                    <li class="column">Narenda Nagar, India</li>
-                    <li class="column">Mandrem, India</li>
-                </ul>
-            </div>
+                <div class="collage">
+                    <div id="one" onclick="collage(this)"> 
+                        <h3 id="txt1"> Seririt, Bali </h3>
+                    </div>
 
-            
+                    <div id="two" onclick="collage(this)"> 
+                        <h3 id="txt2"> Seminyak, Bali </h3>
+                    </div>
+
+                    <div id="three" onclick="collage(this)"> 
+                        <h3 id="txt3"> Beruwala, Sri Lanka </h3>
+                    </div>
+                </div>
+
+                <div class="ref">
+                    <p><br><br><a href="https://www.doyou.com/10-beautiful-yoga-retreats-in-asia/" target="_blank"> - Reference </a></p>
+                </div>
+
+            </div>
 
         </main>
 
