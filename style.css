@@ -73,19 +73,32 @@ p {
     line-height: 2em;
 }
 
-figcaption {
+/*figcaption {
     text-align: center;
     font-size: 10px;
     color: DarkGrey;
     font-style: italic;
-}
+}*/
 
 
 /*----------------------------HEADER----------------------------*/
+
+#opening {
+    /* border: 2px solid #9DD1F1;*/
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #FFF;
+    padding: 250px 0 500px 0;
+    margin: 0 auto;
+}
+#title {
+    opacity: 0;
+}
 header h1 {
     /* border: 2px solid #9DD1F1;*/
-    width: 100%;
     height: 100%;
+    width: 100%;
     background-color: #FFF;
     padding: 20px 0;
     margin: 0 auto;
@@ -113,7 +126,7 @@ nav a:hover {
     text-decoration: none;
 }
 
-nav li {
+.wp-sections {
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 1px;
@@ -121,11 +134,37 @@ nav li {
     padding-right: 40px;
 }
 
-#home-fig img {
+#dropdown {
+    width: 100px;
+    height: 80px;
+    background-color: aliceblue; 
+    list-style-type: none;
+    float: none;
+    margin: 12px 0 0 880px;
+    padding: 5px 0 0 0;
+}
+
+#dropdown li a {
+    display: block;
+    position: relative;
+    color:#9DD1F1;
+    font-size: 14px;
+    cursor: pointer; 
+    width: 100px;
+    height: 30px;
+    margin: 10px 0 5px 0;
+    padding: 0;
+}
+
+#help {
+    cursor: pointer;
+}
+
+/*#home-fig img {
     display: block;
     margin: 5px auto;
     width: 30%;
-}
+}*/
 /*----------------------------MAIN----------------------------*/
 
 /*-----section titles-----*/
@@ -133,6 +172,12 @@ main h2 {
     border-top: 1px solid #9DD1F1;
     padding-top: 15px;
     padding-bottom: 0;
+}
+
+
+/*-----section home-----*/
+#home { 
+    padding-bottom: 20px;
 }
 
 /*-----text in home section-----*/
@@ -144,9 +189,32 @@ main h2 {
     text-align: center;
 }
 
-/*-----section home-----*/
-#home { 
-    padding-bottom: 20px;
+/*-----slider in home-----*/
+#slider {
+    width: 430px;
+    height: 280px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 30px 410px;
+}
+
+#slider .slides {
+    display: inline-flex;
+    flex-direction: row;
+    width: 2150px;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 430px;
+    height: 280px;
+    padding: 0;
+    margin: 0;
 }
 
 /*-----bars under titles-----*/
