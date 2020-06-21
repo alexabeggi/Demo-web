@@ -6,8 +6,8 @@ $(document).ready(function(){
         var pause = 500;
         setInterval(function() {
             //$('#opening').fadeOut(3000);
-            $('#opening').slideUp(1700, function(){
-                $('#title').animate({'opacity': "1"}, 700);
+            $('.opening').slideUp(1700, function(){
+                $('.MY').animate({'opacity': "1"}, 700);
             });
         },pause);
     });
@@ -20,12 +20,12 @@ $(document).ready(function(){
         var currentSlide = 1;
         
         setInterval(function() {
-            $('#slider .slides').animate({'margin-left': '-='+width}, animationSpeed, function (){
+            $('.slider .slides').animate({'margin-left': '-='+width}, animationSpeed, function (){
                 currentSlide++;
-                if (currentSlide === $('#slider .slide').length){
+                if (currentSlide === $('.slider .slide').length){
                 //back to the first slide
                 currentSlide = 1;
-                $('#slider .slides').css('margin-left', 0);
+                $('.slider .slides').css('margin-left', 0);
                 }
             });
         }, pause);
@@ -33,9 +33,9 @@ $(document).ready(function(){
     });
 
     //---------------DROPDOWN MENU (HELP)---------------
-    $('#dropdown').hide();
-    $('#help').click(function(){ 
-        $('#dropdown').slideToggle(500);
+    $('.dropdown').hide();
+    $('.help').click(function(){ 
+        $('.dropdown').slideToggle(500);
         });
 
 

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+:root {
+    --theme-color: #76bde9; 
+}
 
 body {
     background-color: #FFF;
@@ -17,15 +20,14 @@ header{
 }
 
 main{
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding: 50px 0;
 }
 
 footer {
     opacity: 0.9;
     height: 30px;
     width: 80%;
-    background-color: #9DD1F1;
+    background-color: var(--theme-color);
     border-radius: 10px;
     /*text-align: center;*/
     margin: 0 auto;
@@ -45,26 +47,26 @@ footer {
 
 /*----------------------------GENERAL STYLES----------------------------*/
 h1 {
-    color: #9DD1F1;
+    color: var(--theme-color);
     text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    color: #9DD1F1;
+    color: var(--theme-color);
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
 }
 
 h3 {
-    color: DarkGrey;
+    color: rgb(100, 100, 100);
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
 }
 
 p {
-    color: DarkGrey;
+    color: rgb(100, 100, 100);
     font-size: 12px;
     margin: 0px auto 40px auto;
     padding: 10px 10px;
@@ -76,15 +78,15 @@ p {
 /*figcaption {
     text-align: center;
     font-size: 10px;
-    color: DarkGrey;
+    color: rgb(100, 100, 100);;
     font-style: italic;
 }*/
 
 
 /*----------------------------HEADER----------------------------*/
 
-#opening {
-    /* border: 2px solid #9DD1F1;*/
+.opening {
+    /* border: 2px solid var(--theme-color);*/
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -92,7 +94,7 @@ p {
     padding: 250px 0 500px 0;
     margin: 0 auto;
 }
-#title {
+.MY {
     opacity: 0;
 }
 header h1 {
@@ -106,7 +108,7 @@ header h1 {
 
 nav {
     color: #FFF;
-    background-color: #9DD1F1;
+    background-color: var(--theme-color);
     opacity: 0.9;
     text-align: center;
     height: 40px;
@@ -119,35 +121,33 @@ nav {
 nav a {
     color: #FFF;
     text-decoration: none;
-}
-
-nav a:hover {
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: 600;
 }
 
 .wp-sections {
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 1px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px 8px 40px;
+}
+.wp-sections:hover {
+    border-bottom: 4px solid white;
 }
 
-#dropdown {
+.dropdown {
     width: 100px;
     height: 80px;
     background-color: aliceblue; 
     list-style-type: none;
     float: none;
-    margin: 12px 0 0 880px;
+    margin: 12px 0 0 900px;
     padding: 5px 0 0 0;
 }
 
-#dropdown li a {
+.dropdown li a {
     display: block;
     position: relative;
-    color:#9DD1F1;
+    color:#3898d4;
     font-size: 14px;
     cursor: pointer; 
     width: 100px;
@@ -156,11 +156,12 @@ nav a:hover {
     padding: 0;
 }
 
-#help {
+.help {
     cursor: pointer;
+    font-weight: 600;
 }
 
-/*#home-fig img {
+/*.home-fig img {
     display: block;
     margin: 5px auto;
     width: 30%;
@@ -169,20 +170,20 @@ nav a:hover {
 
 /*-----section titles-----*/
 main h2 { 
-    border-top: 1px solid #9DD1F1;
+    border-top: 1px solid var(--theme-color);
     padding-top: 15px;
     padding-bottom: 0;
 }
 
 
 /*-----section home-----*/
-#home { 
+.home { 
     padding-bottom: 20px;
 }
 
 /*-----text in home section-----*/
-#home p { 
-    border: 2px dotted #9DD1F1;
+.home p { 
+    border: 2px dotted var(--theme-color);
     border-radius: 10px;
     width: 450px;
     font-family: 'Raleway', sans-serif;
@@ -190,15 +191,16 @@ main h2 {
 }
 
 /*-----slider in home-----*/
-#slider {
+.slider {
     width: 430px;
     height: 280px;
     overflow: hidden;
     padding: 0;
-    margin: 0 0 30px 410px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-#slider .slides {
+.slider .slides {
     display: inline-flex;
     flex-direction: row;
     width: 2150px;
@@ -208,7 +210,7 @@ main h2 {
     list-style: none;
 }
 
-#slider .slide {
+.slider .slide {
     float: left;
     list-style-type: none;
     width: 430px;
@@ -218,20 +220,20 @@ main h2 {
 }
 
 /*-----bars under titles-----*/
-#yoga-bar p {
-    border-top: 1px solid #9DD1F1;
+.yoga-bar p {
+    border-top: 1px solid var(--theme-color);
     width: 20px;
     text-align: center;
     margin: 0 auto;
 }
-#mind-bar p {
-    border-top: 1px solid #9DD1F1;
+.mind-bar p {
+    border-top: 1px solid var(--theme-color);
     width: 70px;
     text-align: center;
     margin: 0 auto;
 }
-#retreats-bar p {
-    border-top: 1px solid #9DD1F1;
+.retreats-bar p {
+    border-top: 1px solid var(--theme-color);
     width: 40px;
     text-align: center;
     margin: 0 auto;
@@ -241,7 +243,7 @@ main h2 {
 .ref p a {
     text-align: left;
     font-size: 10px;
-    color: #9DD1F1;
+    color: var(--theme-color);
     font-style: italic;
     text-decoration: none;
 }
@@ -251,13 +253,13 @@ main h2 {
 }
 
 /*-----lists-----*/
-#retr {
+.retr {
     width: 800px; 
     text-align: left;
-    color: DarkGrey;
-    font-size: 12px;
     margin: 0px auto;
-    line-height: 1em;
+    /*color: rgb(100, 100, 100);;
+    font-size: 12px;
+    line-height: 1em;*/
 }
 
 /*-----collage images-----*/
@@ -272,7 +274,7 @@ main h2 {
 .collage div {
     width: 260px;
     height: 110px;
-    margin: 0 2px;
+    margin: auto;
     padding-top: 70px;
     border-radius: 15px;
     text-align: center;
@@ -282,7 +284,17 @@ main h2 {
 footer p {
     color: #FFF;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     line-height: normal;
+}
+
+.namas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow a {
+    text-decoration: none;
+    color: #FFF;
 }

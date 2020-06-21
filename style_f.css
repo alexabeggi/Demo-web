@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #FFF;
+    background-image: url("https://spiritualityhealth.com/assets/images/Blogs/_articleSummaryImage/Pratyahara-Meditation.jpg");
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Raleway','Yantramanav', sans-serif;*/
 }
@@ -19,6 +20,7 @@ header{
 }
 
 main {
+    padding: 40px;
     padding-top: 200px;
     height: 400px;    
     overflow: scroll;
@@ -28,7 +30,7 @@ footer {
     opacity: 0.9;
     height: 30px;
     width: 80%;
-    background-color: var(--theme-color);;
+    background-color: var(--theme-color);
     border-radius: 10px;
     /*text-align: center;*/
     margin: 0 auto;
@@ -48,7 +50,7 @@ h1 {
 h2 {
     color: var(--theme-color);
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 p {
@@ -95,13 +97,42 @@ nav a:hover {
 }
 
 /*----------------------------MAIN----------------------------*/
-
-.bar p {
-    border-top: 1px solid var(--theme-color);
-    width: 100px;
-    text-align: center;
+.root1 {
+    border: 2px solid var(--theme-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
+    background-color: rgba(255,255,255,0.6);
 }
+
+.root1 img {
+    margin-bottom: 15px;
+}
+
+.root1 button {
+    background-color: #FFF;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.root1 button:hover {
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.root3 {
+    margin-top: 50px;
+    display: flex; 
+}
+
 /*----------------------------FOOTER----------------------------*/
 footer p {
     color: #FFF;
