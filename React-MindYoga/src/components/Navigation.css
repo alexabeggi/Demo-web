@@ -1,0 +1,73 @@
+.NavBar {
+    text-align: center;
+    background-color: var(--theme-color);
+    color: white;
+}
+
+nav {
+    color: #FFF;
+    background-color: var(--theme-color);
+    opacity: 0.9;
+    text-align: center;
+    height: 40px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    width: 100%;
+    z-index: 1;
+    text-decoration: none;
+}
+
+nav a { /*NavLink*/
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+  
+.Nav-sections {
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0 40px 8px 40px;
+}
+.Nav-sections:hover {
+    border-bottom: 4px solid white;
+}
+
+.help {
+    font-weight: 400;
+}
+nav button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    
+    box-sizing: content-box;
+}
+
+div.dropdown {
+    padding: 0;
+    margin: 0;
+}
+
+.Nav-dropdown {
+    width: 148px;
+    height: 80px;
+    background-color: aliceblue; 
+    list-style-type: none;
+    float: none;
+    padding: 10px 0 0 0;
+}
+
+.DropSec {
+    display: block;
+    position: relative;
+    color: var(--theme-color);
+    font-size: 12px;
+    cursor: pointer; 
+    width: 148px;
+    height: 30px;
+    margin: 10px 0 5px 0;
+    padding: 0;
+}

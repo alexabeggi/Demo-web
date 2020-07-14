@@ -1,0 +1,61 @@
+body {
+    /*background-image: url("https://spiritualityhealth.com/assets/images/Blogs/_articleSummaryImage/Pratyahara-Meditation.jpg");
+    background-size: cover;*/
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Raleway','Yantramanav', sans-serif;*/
+}
+
+.follow {
+    background-image: url("https://spiritualityhealth.com/assets/images/Blogs/_articleSummaryImage/Pratyahara-Meditation.jpg");
+    background-size: cover;
+}
+
+
+main {
+    /*background-color: transparent;*/
+    min-height: 400px;
+}   
+
+
+.root1 h2 {
+    border-top: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.root1 {
+    border: 2px solid var(--theme-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.root1 img {
+    margin-bottom: 15px;
+}
+
+.root1 button {
+    background-color: #FFF;
+    font-size: 12px;
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.root1 button:hover {
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.root3 {
+    display: flex;
+    padding-top: 100px; 
+}
+

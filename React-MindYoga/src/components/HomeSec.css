@@ -1,0 +1,14 @@
+.Home { 
+    padding-top: 40px;
+}
+
+/*-----text in home section-----*/
+.Home p { 
+    border: 2px dotted var(--theme-color);
+    border-radius: 10px;
+    width: 450px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}

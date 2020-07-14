@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  --theme-color: #452fb2; 
+}
+
+header,main,footer {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: var(--theme-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--theme-color);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  border-top: 1px solid var(--theme-color);
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+h3 {
+  color: rgb(100, 100, 100);
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: rgb(100, 100, 100);
+  font-size: 12px;
+  margin: 0px auto;
+  padding: 10px 10px;
+  width: 800px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+
+/*-----references-----*/
+.ref p a {
+  text-align: left;
+  font-size: 10px;
+  color: var(--theme-color);
+  font-style: italic;
+  text-decoration: none;
+}
+
+.ref p a:hover {
+  text-decoration: underline;
+}

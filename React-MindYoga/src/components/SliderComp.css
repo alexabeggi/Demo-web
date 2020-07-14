@@ -1,0 +1,17 @@
+/*-----slider in home-----*/
+
+.slider-container {
+    width: 430px;
+    height: 280px;
+    padding: 0;
+    margin: auto;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 280px;
+    width: 430px;
+}

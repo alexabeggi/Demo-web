@@ -1,0 +1,6 @@
+.yoga-bar p {
+    border-top: 1px solid var(--theme-color);
+    width: 20px;
+    text-align: center;
+    margin: 0 auto;
+}

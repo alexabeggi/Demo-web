@@ -1,0 +1,15 @@
+.Logo {
+    text-align: center;
+    z-index: 1;
+  }
+  
+.Logo-p {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: var(--theme-color);
+    font-weight: bold;
+}
